@@ -1,0 +1,10 @@
+// Configuração do CORS no backend Django
+from corsheaders.defaults import default_headers
+
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_HEADERS = list(default_headers) + [
+    'content-type',
+]
+
+# Adicione estas configurações ao settings.py do Django para permitir requisições do frontend

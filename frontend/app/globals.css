@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 46, 48, 57;
+  --background-end-rgb: 18, 19, 24;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-ruby-600 hover:bg-ruby-700 text-white font-semibold py-2 px-4 rounded-md transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply bg-dark-700 hover:bg-dark-600 text-white font-semibold py-2 px-4 rounded-md transition-colors border border-ruby-600;
+  }
+  
+  .card {
+    @apply bg-dark-800 rounded-lg shadow-lg overflow-hidden border border-dark-700 hover:border-ruby-600 transition-all;
+  }
+  
+  .input-field {
+    @apply bg-dark-700 border border-dark-600 focus:border-ruby-500 text-white rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-ruby-500;
+  }
+}

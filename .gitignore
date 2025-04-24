@@ -1,0 +1,96 @@
+# Arquivos e diretórios específicos do Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Ambientes virtuais
+venv/
+ENV/
+env/
+.env
+
+# Arquivos específicos do Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+static/
+
+# Arquivos específicos do Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.pnpm-debug.log
+.yarn-integrity
+.npm
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Arquivos específicos do Next.js
+.next/
+out/
+.vercel
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Arquivos específicos do IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Arquivos de banco de dados
+*.sqlite3
+*.db
+
+# Arquivos de configuração
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Arquivos de cache
+.cache/
+.parcel-cache/
+
+# Arquivos de build
+/build
+/dist
+
+# Arquivos temporários
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
